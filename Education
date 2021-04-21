@@ -1,4 +1,4 @@
-<!-- Bug List
+Bug List
 
 Scrolling Down makes page wider
 
@@ -19,7 +19,7 @@ Database and Node.js
 
 Page with cards of seperate projects / tf demos
 
-Hire Me page -->
+Hire Me page
 
 
 
@@ -94,7 +94,7 @@ Hire Me page -->
           <div class="collapse navbar-collapse justify-content-md-end"id="navbar">
               <ul class="navbar-nav">
                   <li class="active nav-item"><a href="#" class="nav-link">Home</a></li>
-                  <li class="nav-item"><a href="Education.html" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Education</a></li>
                   <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                   <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                   <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
