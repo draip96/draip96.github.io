@@ -112,21 +112,7 @@ Hire Me page
           //   animateValue("value", 0, 3000, quadratic);
 
 
-            var start = new Date(2020, 09, 7, 10, 0, 0, 0);
-            var end = new Date(2023, 05, 7, 10, 0, 0, 0);
-            var dt = new Date();
 
-            var year = dt.getFullYear();
-
-            console.log((dt.getTime() - start.getTime()) / (end.getTime() - start.getTime()));
-
-            var per = ((dt.getTime() - start.getTime()) / (end.getTime() - start.getTime())) * 100;
-            var per = Math.round(per);
-
-            var m = "10%";
-            var d = "10%";
-            $("#demo").css("width", per + "%");
-            $("#demo").html(per + "%");
 
             $(document).scroll(function(){
                 var scrollHeight = $(document).height();
