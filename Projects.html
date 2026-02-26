@@ -1,257 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Machine learning and deep learning projects by Drai Paulen — reinforcement learning, NLP, computer vision, and more.">
+  <title>Projects — Drai Paulen</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-    <style media="screen">
-      .accent-color{
-        background-color:#3b86ff;
-      }
-
-      .img-lg{
-        width:100%;
-        height:100%;
-        margin-bottom:30px;
-      }
-
-      .grad{
-        background: linear-gradient(#ffffff, #f8f9fa);
-      }
-
-      #page2{
-           transition: opacity 0.1s;
-      }
-
-      .pad{
-           width:50%;
-      }
-
-      body{
-          overflow-x:hidden
-      }
-    </style>
-
-
-  </head>
-  <title>Home</title>
-  <body>
-    <!-- <nav class="navbar navbar-light navbar-expand-md bg-light">
-      <div class="container">
-        <a href="#" class="navbar-brand"><h1>Nav Bar</h1></a>
-      </div>
-    </nav> -->
-    <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top shadow-sm">
-      <div class="container">
-          <a href="page.html" class="navbar-brand"><h1 class="font-weight-bold m-0">DPaulen.</h1></a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-end"id="navbar">
-              <ul class="navbar-nav">
-                  <li class="active nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="nav-item"><a href="Education.html" class="nav-link">Education</a></li>
-                  <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
-                  <li class="nav-item"><a href="Resume.html" class="nav-link">Resume</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-              </ul>
-          </div>
-      </div>
-
-    </nav>
-
-    <section>
-        <br>
-        <br>
-
-
-
-    <div class="container py-5">
-        <!-- <div class="row"> -->
-            <div class="card-deck text-center">
-                <div class="row mx-auto">
-                  <div class="col-sm-4 d-flex align-items-stretch">
-                    <div class="card box-shadow">
-                      <div class="card-header">
-                          <h4>Deep Q-Learning</h4>
-                      </div>
-                      <div class="card-body d-flex flex-column">
-                          <p>Open AI gym's Cart Pole environment</p>
-                          <p>Uses Deep Q-Learning Algorithm</p>
-                          <p>Built to understand RL concepts</p>
-                          <a href="https://github.com/draip96/DeepQ-Learning" class="mt-auto"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Check it out</button></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 d-flex align-items-stretch">
-                    <div class="card box-shadow">
-                      <div class="card-header">
-                          <h4>Tweet Sentiment Analysis</h4>
-                      </div>
-                      <div class="card-body d-flex flex-column">
-                          <p>Analyses Sentiment of Tweets</p>
-                          <p>Using the Sentimen140 dataset</p>
-                          <p>RNN classifier using LSTM modules</p>
-                          <a href="https://github.com/draip96/TweetSentimentAnalysis" class="mt-auto"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Check it out</button></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4 d-flex align-items-stretch">
-                    <div class="card box-shadow">
-                        <div class="card-header">
-                            <h4>Image Classifier</h4>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p> CIFAR 10 Image Dataset</p>
-                            <p>CNN classifier built in Pytorch</p>
-                            <p>Achieves 88% accuracy on test set</p>
-                            <a href="https://github.com/draip96/ImageClassifier" class="mt-auto"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Check it out</button></a>
-                        </div>
-                    </div>
-                  </div>         
-                </div>
-                <div class="row mx-auto mt-5">
-                  <div class="col-sm d-flex align-items-stretch">
-                    <div class="card box-shadow mx-auto align-items-stretch">
-                      <div class="card-header">
-                          <h4>Style Transfer</h4>
-                      </div>
-                      <div class="card-body d-flex flex-column">
-                          <p>Transfers art style between images</p>
-                          <p>Python Notebook Tensorflow Implementation</p>
-                          <p>Allows for images of different sizes and resolutions</p>
-                          <a href="https://github.com/draip96/StyleTransfer" class="mt-auto"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Check it out</button></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm d-flex align-items-stretch">
-                    <div class="card box-shadow mx-auto">
-                        <div class="card-header">
-                            <h4>Fashion MNIST</h4>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p>Classifies types of clothing</p>
-                            <p>Python Notebook Tensorflow Implementation</p>
-                            <p>Uses Fashion-MNIST dataset</p>
-                            <a href="https://github.com/draip96/Fashion-MNIST" class="mt-auto"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Check it out</button></a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        <!-- </div> -->
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">DP.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">Contact</a></li>
+        <li><a href="Resume.html" class="nav-cta">Resume</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
 
+  <!-- Page header -->
+  <header class="page-header">
+    <p class="section-label reveal" style="justify-content:center;">Portfolio</p>
+    <h1 class="section-title reveal reveal-delay-1">ML &amp; AI Projects</h1>
+    <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">
+      Hands-on projects exploring reinforcement learning, computer vision, NLP, and generative AI — all open-source on GitHub.
+    </p>
+  </header>
 
-    <!-- <div class="container py-5">
-      <div class="card-deck text-center">
-        <div class="card box-shadow">
-          <div class="card-header">
-            <h4 class="font-weight-bold">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="font-weight-normal mt-0">0$<small class="text-muted">/ mo</small></h1>
-            <p>10 users included</p>
-            <p>2 GB of storage</p>
-            <p>Email support</p>
-            <p>Help center access</p>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-            <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign Up</button> -->
-          <!-- </div>
-        </div>
-        <div class="card box-shadow">
-          <div class="card-header">
-            <h4 class="font-weight-bold">Standard</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="font-weight-normal mt-0">0$<small class="text-muted">/ mo</small></h1>
-            <p>10 users included</p>
-            <p>2 GB of storage</p>
-            <p>Email support</p>
-            <p>Help center access</p>
-          </div>
-        </div>
-        <div class="card box-shadow">
-          <div class="card-header">
-            <h4 class="font-weight-bold">Premium</h4>
-          </div>
-          <div class="card-body">
-            <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <!-- Projects grid -->
+  <section class="projects-section">
     <div class="container">
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
+      <div class="all-projects-grid">
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-top">
+            <span class="project-emoji">🎮</span>
+            <a href="https://github.com/draip96/DeepQ-Learning" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+          <h3 class="project-title">Deep Q-Learning</h3>
+          <p class="project-description">
+            A reinforcement learning agent trained to balance a pole on a cart in OpenAI Gym's CartPole environment.
+            Uses a Deep Q-Network with experience replay and a target network to stabilise training.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">OpenAI Gym</span>
+            <span class="tag">Reinforcement Learning</span>
           </div>
         </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-top">
+            <span class="project-emoji">🐦</span>
+            <a href="https://github.com/draip96/TweetSentimentAnalysis" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          <h3 class="project-title">Tweet Sentiment Analysis</h3>
+          <p class="project-description">
+            An NLP classifier that detects positive and negative sentiment in tweets.
+            Built with an LSTM recurrent neural network trained on the Sentiment140 dataset of 1.6 million labelled tweets.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">NLP</span>
           </div>
         </div>
+
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-card-top">
+            <span class="project-emoji">🖼️</span>
+            <a href="https://github.com/draip96/ImageClassifier" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">CIFAR-10 Image Classifier</h3>
+          <p class="project-description">
+            A convolutional neural network built in PyTorch that classifies images from the CIFAR-10 dataset into 10 categories.
+            Achieves 88% accuracy on the test set through careful architecture design and data augmentation.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">CNN</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-top">
+            <span class="project-emoji">🎨</span>
+            <a href="https://github.com/draip96/StyleTransfer" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">Neural Style Transfer</h3>
+          <p class="project-description">
+            Transfers the artistic style of one image onto the content of another using a TensorFlow implementation.
+            Supports arbitrary image sizes and resolutions for flexible, high-quality outputs.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Generative AI</span>
+            <span class="tag">VGG</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-top">
+            <span class="project-emoji">👗</span>
+            <a href="https://github.com/draip96/Fashion-MNIST" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">Fashion MNIST Classifier</h3>
+          <p class="project-description">
+            A clothing category classifier trained on the Fashion-MNIST dataset using TensorFlow.
+            Distinguishes between 10 types of apparel including shoes, tops, trousers, and accessories.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">CNN</span>
+            <span class="tag">Fashion-MNIST</span>
+          </div>
+        </div>
+
       </div>
-    </div> -->
-    <div class="fixed-bottom">
-      <a href="https://github.com/draip96" class=""><img src="static/github.png" class="img-fluid float-right" style="width:5%;height:5%;"></img></a>
     </div>
-</section>
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-  </body>
+  </section>
+
+  <!-- GitHub floating button -->
+  <a href="https://github.com/draip96" target="_blank" rel="noopener" class="gh-float" aria-label="GitHub profile">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+  </a>
+
+  <script src="static/main.js"></script>
+</body>
 </html>

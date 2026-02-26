@@ -1,170 +1,188 @@
-<!-- Bug List
-
-Scrolling Down makes page wider
-
-inconsistent padding
-
-white borders
-
-
-
-
-To do list
-
-Progress Bars of Degrees on Education page
-
-Tensorflow Demonstration
-
-Database and Node.js
-
-Page with cards of seperate projects / tf demos
-
-Hire Me page -->
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drai Paulen — CS graduate, machine learning engineer, and software developer based in Toronto.">
+  <title>Drai Paulen</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">DP.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">Contact</a></li>
+        <li><a href="Resume.html" class="nav-cta">Resume</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <style media="screen">
-      .accent-color{
-        background-color:#3b86ff;
-      }
-
-      .img-lg{
-        width:100%;
-        height:100%;
-        margin-bottom:30px;
-      }
-
-      .grad{
-        background: linear-gradient(#ffffff, #f8f9fa);
-      }
-
-      #page2{
-           transition: opacity 0.1s;
-      }
-
-      .pad{
-           width:50%;
-      }
-
-      body{
-          overflow-x:hidden
-      }
-    </style>
-
-    <script>
-        $(document).ready(function(){
-            $(document).scroll(function(){
-                var scrollHeight = $(document).height();
-                var maxRotate = 1400;
-                var rotateVal = 5 + (($(document).scrollTop()* maxRotate) / scrollHeight);
-                var height = $(window).height();
-
-                $("#page1").css("transform", "translate("+(rotateVal)+"px)");
-                $("#page2").css("transform", "translate(0px, "+(-rotateVal/4)+"px)");
-
-                $("#page2").css("opacity", 1-$(document).scrollTop()/130);
-
-            });
-        });
-    </script>
-
-  </head>
-  <title>Home</title>
-  <body>
-    <!-- <nav class="navbar navbar-light navbar-expand-md bg-light">
-      <div class="container">
-        <a href="#" class="navbar-brand"><h1>Nav Bar</h1></a>
-      </div>
-    </nav> -->
-    <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top shadow-sm">
-      <div class="container">
-          <a href="page.html" class="navbar-brand"><h1 class="font-weight-bold m-0">DPaulen.</h1></a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-end"id="navbar">
-              <ul class="navbar-nav">
-                  <li class="active nav-item"><a href="#" class="nav-link">Home</a></li>
-                  <li class="nav-item"><a href="Education.html" class="nav-link">Education</a></li>
-                  <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
-                  <li class="nav-item"><a href="Resume.html" class="nav-link">Resume</a></li>
-                  <li class="nav-item"><a href="Projects.html" class="nav-link">Projects</a></li>
-              </ul>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Open to opportunities
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Hey, I'm
+          <span class="hero-title-name">Drai Paulen</span>
+        </h1>
+        <p class="hero-subtitle reveal reveal-delay-2">
+          <strong>CS Graduate</strong> &amp; Machine Learning Engineer
+        </p>
+        <p class="hero-description reveal reveal-delay-3">
+          Building intelligent systems at the intersection of deep learning,
+          data science, and software engineering. Based in Toronto, Canada.
+        </p>
+        <div class="hero-actions reveal reveal-delay-4">
+          <a href="Projects.html" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+            View Projects
+          </a>
+          <a href="About.html" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat-item">
+            <div class="stat-number">4.17</div>
+            <div class="stat-label">BSc GPA</div>
           </div>
-      </div>
-
-    </nav>
-    <!-- <div class="jumbotron">
-      <h1>This is a heading <small>With a subheading</small></h1>
-    </div> -->
-    <section class="bg-light py-5">
-      <div class="container">
-        <div class="row align-center">
-          <div id="page2" class="col-md-5 pt-5">
-            <h1 class="display-4 text-muted">Drai</h1>
-            <h1 class="px-4 display-2 font-weight-bold">Paulen</h1>
+          <div class="stat-item">
+            <div class="stat-number">3.9</div>
+            <div class="stat-label">Diploma GPA</div>
           </div>
-          <img src="static/ml.png" class="p-5 col-md-7" id="page1">
-          <!-- <a href="#" class="btn btn-info font-weight-light px-5 text-uppercase">Hire Me</a> -->
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">ML Projects</div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section>
-    <div class="text-center pb-5">
-    <h1 class="px-4 pt-5 display-2 font-weight-bold text-center">Student</h1>
-    <p class="lead muted-text">Currently Attending Ryerson University for a Computer Science BSc</p>
-      <h5 class="display-4 text-center pt-5">Programming</h5>
-      <p class="lead muted-text">Graduated from Seneca College with a Computer Programming Diploma</p>
-        <h5 class="display-4 text-center pt-5">Data Science</h5>
-        <p class="lead muted-text">Interested in big data and statistical math</p>
-      <h5 class="display-4 text-center pt-5">Deep Learning</h5>
-      <p class="lead muted-text">Creating projects with Machine Learning, Neural Networks</p>
+      <div class="hero-image-col">
+        <div class="hero-image-wrap reveal">
+          <div class="hero-image-glow"></div>
+          <div class="hero-ring"></div>
+          <img src="static/matt2.png" alt="Drai Paulen" class="hero-img">
+        </div>
+      </div>
     </div>
-    <div class="fixed-bottom">
-      <a href="https://github.com/draip96" class=""><img src="static/github.png" class="img-fluid float-right" style="width:5%;height:5%;"></img></a>
+  </section>
+
+  <!-- About snapshot -->
+  <section class="about-section">
+    <div class="container">
+      <p class="section-label reveal">About</p>
+      <h2 class="section-title reveal reveal-delay-1">What I do</h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        I specialise in building machine learning models and data-driven applications,
+        with a strong foundation in computer science and software engineering.
+      </p>
+      <div class="about-grid">
+        <div class="about-card reveal reveal-delay-1">
+          <div class="about-card-icon">🎓</div>
+          <h3 class="about-card-title">CS Graduate</h3>
+          <p class="about-card-text">Computer Science BSc from Ryerson University (now TMU) with a 4.17 GPA, and a Computer Programming diploma from Seneca College with a 3.9 GPA.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-2">
+          <div class="about-card-icon">🧠</div>
+          <h3 class="about-card-title">Deep Learning</h3>
+          <p class="about-card-text">Building neural networks with PyTorch and TensorFlow — from CNNs and RNNs to reinforcement learning agents and neural style transfer.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-3">
+          <div class="about-card-icon">📊</div>
+          <h3 class="about-card-title">Data Science</h3>
+          <p class="about-card-text">Passionate about uncovering insights in large datasets through statistical analysis, visualisation, and predictive modelling.</p>
+        </div>
+        <div class="about-card reveal reveal-delay-4">
+          <div class="about-card-icon">💻</div>
+          <h3 class="about-card-title">Software Development</h3>
+          <p class="about-card-text">Solid foundation in software engineering and computer programming — writing clean, maintainable code across multiple languages and paradigms.</p>
+        </div>
+      </div>
     </div>
-    </section>
+  </section>
 
-    <!-- <section class="bg-light">
-
-    <div class="fluid-container">
-      <h3> Subtitle of new block</h3>
-    </div> -->
-
-    <!-- <div class="container">
-      <kbd>ctrl + p</kbd>
-
-      <a href="about.html" class="btn btn-primary" role="button">Start</a>
+  <!-- Featured projects -->
+  <section class="featured-section">
+    <div class="container">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal reveal-delay-1">Featured Projects</h2>
+      <p class="section-subtitle reveal reveal-delay-2">
+        A selection of machine learning and deep learning projects — from game-playing agents to image classifiers.
+      </p>
+      <div class="projects-grid">
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-top">
+            <span class="project-emoji">🎮</span>
+            <a href="https://github.com/draip96/DeepQ-Learning" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub repository">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">Deep Q-Learning</h3>
+          <p class="project-description">Reinforcement learning agent that masters OpenAI Gym's CartPole environment using a Deep Q-Network with experience replay.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">OpenAI Gym</span>
+            <span class="tag">RL</span>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-top">
+            <span class="project-emoji">🐦</span>
+            <a href="https://github.com/draip96/TweetSentimentAnalysis" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub repository">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">Tweet Sentiment Analysis</h3>
+          <p class="project-description">LSTM-based RNN classifier trained on the Sentiment140 dataset to detect positive and negative sentiment in tweets.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">NLP</span>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-card-top">
+            <span class="project-emoji">🖼️</span>
+            <a href="https://github.com/draip96/ImageClassifier" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub repository">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-title">Image Classifier</h3>
+          <p class="project-description">CNN classifier built in PyTorch on the CIFAR-10 dataset achieving 88% test accuracy across 10 object categories.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">CNN</span>
+            <span class="tag">CIFAR-10</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="Projects.html" class="btn btn-outline reveal">See all projects →</a>
+      </div>
     </div>
-  </hr> -->
+  </section>
 
-  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <!-- GitHub floating button -->
+  <a href="https://github.com/draip96" target="_blank" rel="noopener" class="gh-float" aria-label="GitHub profile">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+  </a>
 
-    <div class="alert alert-info alert-dismissible fade in">
-      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-      <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-    </div> -->
-
-
-<!--
-
-    </section> -->
-
-
-
-    </body>
+  <script src="static/main.js"></script>
+</body>
 </html>
