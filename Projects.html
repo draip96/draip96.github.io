@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Machine learning and deep learning projects by Drai Paulen — reinforcement learning, NLP, computer vision, and more.">
-  <title>Projects — Drai Paulen</title>
+  <meta name="description" content="Machine learning and AI projects by Drai Paulen Patterson spanning world models, NLP robustness, and RAG systems.">
+  <title>Projects - Drai Paulen Patterson</title>
   <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
@@ -30,9 +30,9 @@
   <!-- Page header -->
   <header class="page-header">
     <p class="section-label reveal" style="justify-content:center;">Portfolio</p>
-    <h1 class="section-title reveal reveal-delay-1">ML &amp; AI Projects</h1>
+    <h1 class="section-title reveal reveal-delay-1">ML and AI Projects</h1>
     <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">
-      Hands-on projects exploring reinforcement learning, computer vision, NLP, and generative AI — all open-source on GitHub.
+      Resume-backed projects with measurable results across sequence modeling, fake news detection, and retrieval-augmented generation.
     </p>
   </header>
 
@@ -43,101 +43,73 @@
 
         <div class="project-card reveal reveal-delay-1">
           <div class="project-card-top">
-            <span class="project-emoji">🎮</span>
-            <a href="https://github.com/draip96/DeepQ-Learning" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+            <span class="project-emoji">SSM</span>
+            <a href="https://github.com/draip96" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub profile">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
             </a>
           </div>
-          <h3 class="project-title">Deep Q-Learning</h3>
+          <h3 class="project-title">Sparse State Space Models for World Modeling</h3>
           <p class="project-description">
-            A reinforcement learning agent trained to balance a pole on a cart in OpenAI Gym's CartPole environment.
-            Uses a Deep Q-Network with experience replay and a target network to stabilise training.
+            Built a sparse sequence-modeling pipeline using Mamba-2 in JAX with vector quantization for efficient latent representations.
           </p>
+          <ul class="project-metrics">
+            <li>4x faster inference through linear-time sequence modeling.</li>
+            <li>60% lower memory usage with discrete latent quantization.</li>
+            <li>25% stronger long-horizon prediction versus recurrent baselines.</li>
+          </ul>
           <div class="tags">
             <span class="tag">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">OpenAI Gym</span>
-            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">JAX</span>
+            <span class="tag">Mamba-2</span>
+            <span class="tag">Vector Quantization</span>
           </div>
         </div>
 
         <div class="project-card reveal reveal-delay-2">
           <div class="project-card-top">
-            <span class="project-emoji">🐦</span>
-            <a href="https://github.com/draip96/TweetSentimentAnalysis" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+            <span class="project-emoji">NLP</span>
+            <a href="https://github.com/draip96" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub profile">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
             </a>
           </div>
-          <h3 class="project-title">Tweet Sentiment Analysis</h3>
+          <h3 class="project-title">FakeNewsClassifier Research Package</h3>
           <p class="project-description">
-            An NLP classifier that detects positive and negative sentiment in tweets.
-            Built with an LSTM recurrent neural network trained on the Sentiment140 dataset of 1.6 million labelled tweets.
+            Designed and trained BERT and RoBERTa classification pipelines with robust benchmarking for noisy and synthetic label settings.
           </p>
+          <ul class="project-metrics">
+            <li>95% accuracy across a 50K+ sample training pipeline.</li>
+            <li>12% performance degradation quantified under increasing noise.</li>
+            <li>Reproducible robustness benchmarks for comparative model evaluation.</li>
+          </ul>
           <div class="tags">
             <span class="tag">Python</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">LSTM</span>
-            <span class="tag">NLP</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">BERT</span>
           </div>
         </div>
 
         <div class="project-card reveal reveal-delay-3">
           <div class="project-card-top">
-            <span class="project-emoji">🖼️</span>
-            <a href="https://github.com/draip96/ImageClassifier" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
+            <span class="project-emoji">RAG</span>
+            <a href="https://github.com/draip96" target="_blank" rel="noopener" class="project-gh-link" aria-label="GitHub profile">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
             </a>
           </div>
-          <h3 class="project-title">CIFAR-10 Image Classifier</h3>
+          <h3 class="project-title">ChatRAG: RAG-WebUI Chatbot</h3>
           <p class="project-description">
-            A convolutional neural network built in PyTorch that classifies images from the CIFAR-10 dataset into 10 categories.
-            Achieves 88% accuracy on the test set through careful architecture design and data augmentation.
+            Created a retrieval-augmented assistant with semantic search and vector similarity retrieval over a document collection.
           </p>
+          <ul class="project-metrics">
+            <li>40% reduction in hallucinations using retrieval-grounded responses.</li>
+            <li>Sub-200ms query latency with optimized embeddings retrieval.</li>
+            <li>Semantic search indexing over 1K+ documents.</li>
+          </ul>
           <div class="tags">
             <span class="tag">Python</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">CNN</span>
-            <span class="tag">Computer Vision</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-card-top">
-            <span class="project-emoji">🎨</span>
-            <a href="https://github.com/draip96/StyleTransfer" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">Neural Style Transfer</h3>
-          <p class="project-description">
-            Transfers the artistic style of one image onto the content of another using a TensorFlow implementation.
-            Supports arbitrary image sizes and resolutions for flexible, high-quality outputs.
-          </p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">Generative AI</span>
-            <span class="tag">VGG</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-card-top">
-            <span class="project-emoji">👗</span>
-            <a href="https://github.com/draip96/Fashion-MNIST" target="_blank" rel="noopener" class="project-gh-link" aria-label="View on GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">Fashion MNIST Classifier</h3>
-          <p class="project-description">
-            A clothing category classifier trained on the Fashion-MNIST dataset using TensorFlow.
-            Distinguishes between 10 types of apparel including shoes, tops, trousers, and accessories.
-          </p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">TensorFlow</span>
-            <span class="tag">CNN</span>
-            <span class="tag">Fashion-MNIST</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">Vector DB</span>
+            <span class="tag">RAG</span>
           </div>
         </div>
 
