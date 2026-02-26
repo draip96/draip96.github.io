@@ -1,216 +1,93 @@
-<!-- Bug list
-
-Scrolling Down makes page wider
-
-inconsistent padding
-
-white borders
-
-
-
-
-To do list
-
-Count up speedily GPA
-
-Tensorflow Demonstration
-
-Database and Node.js
-
-Page with cards of seperate projects / tf demos
-
-Hire Me page
- -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drai Paulen's education — Computer Science BSc from Ryerson University and Computer Programming diploma from Seneca College.">
+  <title>Education — Drai Paulen</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">DP.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">Contact</a></li>
+        <li><a href="Resume.html" class="nav-cta">Resume</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <style media="screen">
-      .accent-color{
-        background-color:#3b86ff;
-      }
+  <!-- Page header -->
+  <header class="page-header">
+    <p class="section-label reveal" style="justify-content:center;">Education</p>
+    <h1 class="section-title reveal reveal-delay-1">Academic Background</h1>
+    <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">
+      Two institutions, two programs — a foundation in software engineering and a specialisation in computer science.
+    </p>
+  </header>
 
-      .img-lg{
-        width:100%;
-        height:100%;
-        margin-bottom:30px;
-      }
+  <!-- Timeline -->
+  <section class="edu-section">
+    <div class="container">
+      <div class="edu-timeline">
 
-      .grad{
-        background: linear-gradient(#ffffff, #f8f9fa);
-      }
-
-      #page2{
-           transition: opacity 0.1s;
-      }
-
-      body{
-          overflow-x:hidden;
-      }
-
-      .sen{
-          background-color:#da291c;
-      }
-
-      .rye{
-          background-color:#004c9b;
-      }
-
-      .mh{
-        min-height: 100vh;
-      }
-    </style>
-
-    <script>
-        $(document).ready(function(){
-          //
-          //   console.log("BUD");
-          //
-          //   //Quadratic easing
-          //   function quadratic (duration, range, current) {
-          //     return ((duration * 3) / Math.pow(range, 3)) * Math.pow(current, 2);
-          //   }
-          //
-          //   function animateValue(id, start, duration, easing) {
-          //     var end = document.getElementById(id).textContent;
-          //     var range = end - start;
-          //     var current = start;
-          //     var increment = end > start? 0.1 : -1;
-          //     var obj = document.getElementById(id);
-          //     var startTime = new Date();
-          //     var offset = 1;
-          //     var remainderTime = 0;
-          //
-          //     var step = function() {
-          //       current += increment;
-          //       obj.innerHTML = current;
-          //
-          //       if (current != end) {
-          //         setTimeout(step, easing(duration, range, current));
-          //       }
-          //       else {
-          //         console.log('Easing: ', easing);
-          //         console.log('Elapsed time: ', new Date() - startTime)
-          //         console.log('');
-          //       }
-          //     };
-          //
-          //     setTimeout(step, easing(duration, range, start));
-          // };
-          //
-          //   animateValue("value", 0, 3000, quadratic);
-
-
-
-
-            $(document).scroll(function(){
-                var scrollHeight = $(document).height();
-                var maxRotate = 1400;
-                var rotateVal = 5 + (($(document).scrollTop()* maxRotate) / scrollHeight);
-                var height = $(window).height();
-
-                $("#page1").css("transform", "translate("+(rotateVal)+"px)");
-                $("#page2").css("transform", "translate(0px, "+(-rotateVal/4)+"px)");
-
-                $("#page2").css("opacity", 1-$(document).scrollTop()/130);
-            });
-        });
-
-
-    </script>
-
-  </head>
-  <title>Education</title>
-  <body>
-    <!-- <nav class="navbar navbar-light navbar-expand-md bg-light">
-      <div class="container">
-        <a href="#" class="navbar-brand"><h1>Nav Bar</h1></a>
-      </div>
-    </nav> -->
-    <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top shadow-sm">
-      <div class="container">
-          <a href="page.html" class="navbar-brand"><h1 class="font-weight-bold m-0">DPaulen.</h1></a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-end"id="navbar">
-              <ul class="navbar-nav">
-                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="active nav-item"><a href="#" class="nav-link">Education</a></li>
-                  <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
-                  <li class="nav-item"><a href="Resume.html" class="nav-link">Resume</a></li>
-                  <li class="nav-item"><a href="Projects.html" class="nav-link">Projects</a></li>
-              </ul>
+        <!-- Ryerson -->
+        <div class="edu-card reveal">
+          <img src="static/ryerson.png" alt="Ryerson University (TMU)" class="edu-logo">
+          <h2 class="edu-school">Ryerson University</h2>
+          <p class="edu-degree">Bachelor of Science — Computer Science</p>
+          <div class="edu-meta">
+            <span class="edu-meta-item"><span>📍</span> Toronto, Ontario</span>
+            <span class="edu-meta-item"><span>🗓</span> Completed</span>
+            <span class="edu-gpa">GPA 4.17</span>
           </div>
-      </div>
-
-    </nav>
-    <!-- <div class="jumbotron">
-      <h1>This is a heading <small>With a subheading</small></h1>
-    </div> -->
-    <!-- <section class="bg-light py-5">
-      <div class="container">
-        <div class="row align-center">
-          <div id="page2" class="col-md-5 pt-5">
-            <h1 class="display-4 text-muted">Data</h1>
-            <h1 class="px-4 display-2 font-weight-bold">Science</h1>
+          <div class="progress-label">
+            <span>Programme completion</span>
+            <span>100%</span>
           </div>
-          <img src="ml.png" class="p-5 col-md-7" id="page1">
+          <div class="progress-track">
+            <div class="progress-fill" data-width="100%"></div>
+          </div>
         </div>
-      </div>
-    </section> -->
 
-    <section class="mh bg-light">
-        <br>
-        <br>
-      <h5 class="display-4 text-center pt-5 bg-white mb-0">Educated By</h5>
-      <div class="row text-center">
-          <div class="col-sm-6 grad pt-5">
-            <img src="static/seneca.svg" class="img-fluid p-5">
+        <!-- Seneca -->
+        <div class="edu-card reveal reveal-delay-1">
+          <img src="static/seneca.svg" alt="Seneca College" class="edu-logo">
+          <h2 class="edu-school">Seneca College</h2>
+          <p class="edu-degree">Diploma — Computer Programming</p>
+          <div class="edu-meta">
+            <span class="edu-meta-item"><span>📍</span> Toronto, Ontario</span>
+            <span class="edu-meta-item"><span>🗓</span> Completed</span>
+            <span class="edu-gpa">GPA 3.9</span>
           </div>
-        <div class="col-sm-6 grad">
-          <img src="static/ryerson.png" class="img-fluid p-5">
+          <div class="progress-label">
+            <span>Programme completion</span>
+            <span>100%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="100%"></div>
+          </div>
         </div>
-      </div>
-      <div class="row text-center px-3">
-          <div class="col-sm-6 bg-light pt-5">
-              <h5>Computer Programming - Diploma</h5>
-              <div class="progress mb-4" style="height:3em;">
-                <div class="progress-bar sen" style="width:100%;">
-                  100% - Complete
-                </div>
-              </div>
-              <div class="p-5" id="value">
-                  <h5 class="display-4">GPA: 3.9</h5>
-              </div>
-          </div>
-          <div class="col-sm-6 bg-light pt-5">
-              <h5>Computer Science - Bachelor of Science</h5>
-              <div class="progress mb-4" style="height:3em;">
-                <div class="progress-bar rye" style="width:100%;">
-                  100% - Complete
-                </div>
-              </div>
-              <div class="p-5" id="value">
-                  <h5 class="display-4">GPA: 4.17</h5>
-              </div>
-          </div>
-      </div>
-      <div class="fixed-bottom">
-        <a href="https://github.com/draip96" class=""><img src="static/github.png" class="img-fluid float-right" style="width:5%;height:5%;"></img></a>
-      </div>
-    </section>
 
-    </body>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub floating button -->
+  <a href="https://github.com/draip96" target="_blank" rel="noopener" class="gh-float" aria-label="GitHub profile">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+  </a>
+
+  <script src="static/main.js"></script>
+</body>
 </html>

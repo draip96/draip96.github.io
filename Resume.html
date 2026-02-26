@@ -1,84 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resume of Drai Paulen — CS graduate and machine learning engineer.">
+  <title>Resume — Drai Paulen</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">DP.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">Contact</a></li>
+        <li><a href="Resume.html" class="nav-cta">Resume</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <style media="screen">
-      .accent-color{
-        background-color:#3b86ff;
-      }
+  <!-- Page header -->
+  <header class="page-header">
+    <p class="section-label reveal" style="justify-content:center;">Resume</p>
+    <h1 class="section-title reveal reveal-delay-1">Drai Paulen</h1>
+    <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">
+      CS graduate · Machine learning engineer · Toronto, Canada
+    </p>
+  </header>
 
-      .img-lg{
-        width:100%;
-        height:100%;
-        margin-bottom:30px;
-      }
-
-      .grad{
-        background: linear-gradient(#ffffff, #f8f9fa);
-      }
-
-      #page2{
-           transition: opacity 0.1s;
-      }
-
-      .pad{
-          width:50%;
-      }
-
-      body{
-          overflow-x:hidden
-      }
-    </style>
-
-    <script>
-
-    </script>
-
-  </head>
-  <title>Resume</title>
-  <body>
-    <nav class="navbar navbar-light navbar-expand-md bg-light fixed-top shadow-sm">
-      <div class="container">
-          <a href="index.html" class="navbar-brand"><h1 class="font-weight-bold m-0">DPaulen.</h1></a>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-end"id="navbar">
-              <ul class="navbar-nav">
-                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="nav-item"><a href="Education.html" class="nav-link">Education</a></li>
-                  <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
-                  <li class="active nav-item"><a href="#" class="nav-link">Resume</a></li>
-                  <li class="nav-item"><a href="Projects.html" class="nav-link">Projects</a></li>
-              </ul>
-          </div>
+  <!-- Resume viewer -->
+  <section class="resume-section">
+    <div class="container">
+      <div class="resume-wrap reveal">
+        <img src="static/ResearchResume.jpg" alt="Drai Paulen's resume">
       </div>
+    </div>
+  </section>
 
-    </nav>
-    <section>
-    <br>
-    <br>
+  <!-- GitHub floating button -->
+  <a href="https://github.com/draip96" target="_blank" rel="noopener" class="gh-float" aria-label="GitHub profile">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+  </a>
 
-        <div>
-            <h2 class="display-4 pt-5 text-center">Resume</h2>
-        </div>
-    <hr>
-        <div>
-            <img src="static/ResearchResume.jpg" class="img-fluid rounded mx-auto d-block w-75"> </img>
-        </div>
-      <div class="fixed-bottom">
-        <a href="https://github.com/draip96" class=""><img src="static/github.png" class="img-fluid float-right" style="width:5%;height:5%;"></img></a>
-      </div>
-    </section>
-
-
-
-    </body>
+  <script src="static/main.js"></script>
+</body>
 </html>
